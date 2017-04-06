@@ -4,7 +4,8 @@ var path = require('path');
 var multer  = require('multer');
 var engineerSchema = require('../model/engineerSchema');
 var os = require('os');
-var ip = os.networkInterfaces().wlan1[0].address;
+var ip = 34.208.235.203;
+//os.networkInterfaces().wlan1[0].address;
 var fileName ;
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {

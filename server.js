@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var app = express();
 
-app.set('port', process.env.NODE_PORT || 3030);
+app.set('port', process.env.PORT || 3030);
 app.set('host', process.env.NODE_IP || 'localhost');
 
 app.use(cors());
